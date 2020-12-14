@@ -8,5 +8,23 @@
 
 <h1 th:text="'Owner Index page'">Owner Index Page</h1>
 
+<table>
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each=" owner : ${owners}">
+        <td th:text="${owner?.id}">1</td>
+        <td th:text="${owner?.firstName}">ss</td>
+        <td th:text="${owner?.lastName}">dd</td>
+    </tr>
+    </tbody>
+
+</table>
+
 </body>
 </html>
